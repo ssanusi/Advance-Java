@@ -1,5 +1,6 @@
 package com.ssanusi;
 
+import collections.CollectionsDemo;
 import exceptions.ExceptionDemo;
 import generics.GenericList;
 import generics.User;
@@ -11,6 +12,7 @@ public class Main {
         //ExceptionDemo.show();
 
         //generics
+        System.out.println("############################ Generics ###################");
         var list = new GenericList<Integer>();
         list.add(1);
         list.add(3);
@@ -32,11 +34,14 @@ public class Main {
         Utils.print("K", 12);
 
         //Collection Framework
+        System.out.println("############################ Collection Framework ###################");
         var list2 = new GenericList<String>();
         list2.add("a");
         list2.add("b");
         for(var item : list2)
             System.out.println(item);
+
+        CollectionsDemo.show();
 
     }
 }
