@@ -1,9 +1,6 @@
 package com.ssanusi;
 
-import collections.CollectionsDemo;
-import collections.EmailComparator;
-import collections.Family;
-import collections.ListDemo;
+import collections.*;
 import generics.GenericList;
 import generics.User;
 import generics.Utils;
@@ -67,6 +64,9 @@ public class Main {
         System.out.println(familyList);
         Collections.sort(familyList, new EmailComparator());
         System.out.println(familyList);
+
+        System.out.println("############################ Queue Interface ###################");
+        QueueDemo.show();
 
     }
 }
