@@ -68,5 +68,12 @@ public class Main {
         System.out.println("############################ Queue Interface ###################");
         QueueDemo.show();
 
+        System.out.println("############################ Set Interface ###################");
+        SetDemo.show();
+
+
+
+
+
     }
 }
