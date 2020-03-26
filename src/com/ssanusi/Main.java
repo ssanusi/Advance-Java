@@ -1,10 +1,16 @@
 package com.ssanusi;
 
 import collections.CollectionsDemo;
-import exceptions.ExceptionDemo;
+import collections.EmailComparator;
+import collections.Family;
+import collections.ListDemo;
 import generics.GenericList;
 import generics.User;
 import generics.Utils;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Main {
 
@@ -40,8 +46,27 @@ public class Main {
         list2.add("b");
         for(var item : list2)
             System.out.println(item);
-
+        System.out.println("############################ Collection Interface ###################");
         CollectionsDemo.show();
+
+        System.out.println("############################ List Interface ###################");
+        ListDemo.show();
+
+        List<Family> familyList = new ArrayList<>();
+        familyList.add(new Family("sanusi", 31, "sanusi@sulaiman.com"));
+        familyList.add(new Family("zulihat", 33, "zulihat@sulaiman.com"));
+        familyList.add(new Family("tahir", 29, "tahir@sulaiman.com"));
+        familyList.add(new Family("shehu", 27, "shehu@sulaiman.com"));
+        familyList.add(new Family("abdul-hakeem", 39, "abdulhakeem@sulaiman.com"));
+        familyList.add(new Family("rukkayat", 35, "rukayyah@sulaiman.com"));
+        familyList.add(new Family("munirat", 23, "munirah@sulaiman.com"));
+        familyList.add(new Family("khadijah", 25, "khadijah@sulaiman.com"));
+        familyList.add(new Family("zainab", 37, "zainab@sulaiman.com"));
+        familyList.add(new Family("ibrahim", 21, "ibrahim@sulaiman.com"));
+        Collections.sort(familyList);
+        System.out.println(familyList);
+        Collections.sort(familyList, new EmailComparator());
+        System.out.println(familyList);
 
     }
 }
