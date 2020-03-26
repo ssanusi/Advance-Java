@@ -71,6 +71,8 @@ public class Main {
         System.out.println("############################ Set Interface ###################");
         SetDemo.show();
 
+        System.out.println("############################ Map Interface ###################");
+        MapDemo.show();
 
 
 
